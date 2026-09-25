@@ -88,9 +88,7 @@ Plan status, restore purchases, password management, and legal links (About, Pri
 - **Free** — First **2** analyses
 - **WeVibe Pro** — Unlimited analyses and deeper Pro features
 
-Subscriptions are handled with **RevenueCat** (Apple / Google entitlement: `WeVibe Pro`), synced with the WeVibe backend so quota and Pro status stay server-authoritative.
-
-Approximate list pricing (client fallbacks): monthly ~$9.99 · annual ~$79.99.
+Subscriptions use **in-app purchase** on **iOS** (App Store) and **Android** (Google Play), synced with the WeVibe backend so quota and Pro status stay server-authoritative.
 
 # Tech Stack
 
@@ -99,7 +97,7 @@ Approximate list pricing (client fallbacks): monthly ~$9.99 · annual ~$79.99.
 - React Native 0.86, React 19, TypeScript
 - Redux Toolkit + RTK Query, JWT auth, AsyncStorage
 - `react-native-nitro-sound` for recording (local M4A → multipart upload)
-- RevenueCat (`react-native-purchases`) for subscriptions
+- In-app purchases (iOS App Store & Android Google Play) for WeVibe Pro
 - HTML → PDF + native share for report export
 - Soft lavender brand system — Instrument Serif + Plus Jakarta Sans, purple CTAs
 
